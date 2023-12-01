@@ -11,6 +11,7 @@ from our_models import ImprovedConvAutoencoder
 model = torch.hub.load(
     'ultralytics/yolov5', # пути будем указывать гдето в локальном пространстве
     'custom', # непредобученная
+    force_reload=True,
     path='best2.pt', # путь к нашим весам
     )
 
